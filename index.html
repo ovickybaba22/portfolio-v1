@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Front-End Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="wrap">
+    <h1>Your Name</h1>
+    <p class="sub">Front-End Developer (in training) • Remote</p>
+    <div class="btns">
+      <a class="btn" href="#projects">Projects</a>
+      <a class="btn btn2" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        I’m building and shipping web projects weekly. This portfolio will update every week with new live builds.
+      </p>
+    </section>
+
+    <section class="card" id="projects">
+      <h2>Projects</h2>
+      <p class="muted">Week 1 is in progress. First live project coming soon.</p>
+    </section>
+
+    <section class="card">
+      <h2>Quick Estimator (JavaScript)</h2>
+      <p class="muted">A tiny interactive feature to prove real functionality.</p>
+
+      <div class="grid">
+        <label>
+          Hours
+          <input id="hours" type="number" min="0" value="5" />
+        </label>
+        <label>
+          Rate (£/$)
+          <input id="rate" type="number" min="0" value="25" />
+        </label>
+      </div>
+
+      <div class="result">
+        Total: <strong id="total">—</strong>
+      </div>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <span class="muted">youremail@example.com</span></p>
+      <p>Location: <span class="muted">UK (open to US remote)</span></p>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p class="muted">© <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
